@@ -1,0 +1,81 @@
+%\documentclass[conference]{IEEEtran}
+
+%\usepackage{amsmath,amssymb,amsfonts}
+%\usepackage{algorithmic}
+%\usepackage{graphicx}
+%\usepackage{textcomp}
+%\usepackage{xcolor}
+
+%\usepackage[sorting=none,doi=false,isbn=false,url=false,eprint=false, giveninits=true]{biblatex}
+%\AtBeginBibliography{\footnotesize}
+%\addbibresource{refs.bib}
+
+\documentclass[conference, a4paper]{IEEEtran}  % Added a4paper option
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+% Add geometry package for precise A4 formatting
+\usepackage[pass]{geometry}  % Preserves IEEE margins
+\geometry{a4paper, margin=1in}  % Explicit A4 with 1-inch margins
+
+\usepackage[backend=bibtex, sorting=none,doi=false,isbn=false,url=false,eprint=false, giveninits=true]{biblatex}
+\AtBeginBibliography{\footnotesize}
+\addbibresource{refs.bib}
+
+
+\begin{document}
+
+
+\title{Physics-Informed Neural Networks for Anisotropic Cardiac Activation Mapping}
+
+\author{
+\IEEEauthorblockN{Mohamed A. M. Gad}
+\IEEEauthorblockA{\textit{Dept. of Systems and Biomedical Engineering} \\
+\textit{Faculty of Engineering, Cairo University}\\
+Giza, Egypt \\
+mohamed.a.gad@outlook.com}
+\and
+\IEEEauthorblockN{Sherif M. M. El-Gendy}
+\IEEEauthorblockA{\textit{Dept. of Systems and Biomedical Engineering} \\
+\textit{Faculty of Engineering, Cairo University}\\
+Giza, Egypt \\
+sherif.gendy04@eng-st.cu.edu.eg}
+\and
+\IEEEauthorblockN{Mazen A. A. Atlam}
+\IEEEauthorblockA{\textit{Dept. of Systems and Biomedical Engineering} \\
+\textit{Faculty of Engineering, Cairo University}\\
+Giza, Egypt \\
+mazen.atlam04@eng-st.cu.edu.eg}
+\and
+\IEEEauthorblockN{Ahmed S.A. Mohamed}
+\IEEEauthorblockA{\textit{\textsuperscript{1}Eng. Math Dept., Faculty of Engineering, Cairo University} \\
+\textit{\textsuperscript{2}University of Science and Technology, Zewail City}\\
+Giza, Egypt \\
+aashiry@ieee.org, ORCID: 0000-0002-9895-5723}
+}
+
+\maketitle
+
+\input{00-abstract}
+
+\begin{IEEEkeywords}
+Cardiac Electrophysiology, Activation Mapping, Physics-Informed Neural Networks (PINNs), Eikonal Equation, Catheter Ablation, Heart Arrhythmia.
+\end{IEEEkeywords}
+
+\input{01-introduction}
+
+\input{02-previous_work}
+
+\input{03-methodology}
+
+\input{04-results_and_discussion}   
+
+\input{05-conclusion}
+
+\printbibliography
+
+\end{document}
