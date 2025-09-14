@@ -11,7 +11,7 @@
     \caption{Benchmark problem for activation times. The columns display the exact solution, the results of the proposed anisotropic physics-informed neural network (PINN) framework, and the results of the isotropic PINN method. The black circles indicate the sampling locations.}
     \label{fig:comparison}
 \end{figure*}
-We evaluated our framework on a synthetic 2D experiment. We adopted this synthetic experiment setup as it has become the standard benchmark in previous studies addressing the same problem \cite{Mase2010, coveney2020, Karoui2021, SahliCostabal2020}. Moreover, our framework is designed to naturally extend to real data once datasets become available. On a 35x35 grid over the domain $\Omega = [-1,1]^2$, we defined an anisotropic conduction velocity tensor field D(x, y) \cite{RuizHerrera2022}:
+We evaluated our framework on a synthetic 2D experiment. We adopted this synthetic experiment setup as it has become the standard benchmark in previous studies addressing the same problem \cite{Mase2010, coveney2020, Karoui2021, SahliCostabal2020}, as acquiring real data proved very challenging. Moreover, our framework is designed to naturally extend to real data once datasets become available. On a 35x35 grid over the domain $\Omega = [-1,1]^2$, we defined an anisotropic conduction velocity tensor field D(x, y) \cite{RuizHerrera2022}:
 \begin{equation}
 \mathbf{D}(x, y) =
 \begin{cases}
